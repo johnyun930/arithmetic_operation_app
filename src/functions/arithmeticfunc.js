@@ -1,5 +1,6 @@
 export function add(...numbers) {
-  return numbers.reduce((accu, val) => (accu += val));
+  console.log(numbers);
+  return numbers.reduce((accu = 0, val) => (accu += val));
 }
 
 export function subtract(number, ...substracts) {
